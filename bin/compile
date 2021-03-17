@@ -34,6 +34,6 @@ EOF
 chmod +x $BUILD_DIR/bin/run_cloud_sql_proxy
 
 echo "-----> Adding ENV guard for running cloud_sql_proxy into slug"
-cp "$BUILD_DIR/bin/start-cloudsql-proxy" $BUILD_DIR/bin/
+cp "$BUILDPACK_DIR/bin/start-cloudsql-proxy" $BUILD_DIR/bin/
 chmod +x $BUILD_DIR/bin/start-cloudsql-proxy
 exit 0
