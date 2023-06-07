@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 main() {
-    if [ -v GCLOUD_CREDENTIALS ] && [ -v GCLOUD_INSTANCE ]
+    if [ -v GOOGLE_CREDENTIALS ] && [ -v GOOGLE_CLOUDSQL_CONNECTION_NAME ]
     then
         echo "Starting CloudSQL Proxy"
         bin/run_cloud_sql_proxy
