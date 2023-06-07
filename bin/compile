@@ -28,7 +28,7 @@ fi
 cat >$BUILD_DIR/bin/run_cloud_sql_proxy <<EOF
 #!/bin/sh
 echo "-----> Adding credentials JSON"
-printf "%s" "\$GCLOUD_CREDENTIALS" | base64 --decode > /app/google-credentials.json
+printf "%s" "\$GOOGLE_CREDENTIALS" | base64 --decode > /app/google-credentials.json
 echo "==="
 cat /app/google-credentials.json
 echo "==="
